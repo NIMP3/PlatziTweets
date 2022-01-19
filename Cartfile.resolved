@@ -1,0 +1,7 @@
+github "Daltron/NotificationBanner" "2ce5c49d8ee4865f01a3ce3bbe078664c78c7a3c"
+github "SVProgressHUD/SVProgressHUD" "2.2.5"
+github "SnapKit/SnapKit" "5.0.1"
+github "airbnb/lottie-ios" "dcf5f75004b8e4bb7fe7770a9dd10a23319cfedd"
+github "cbpowell/MarqueeLabel" "4.3.0"
+github "evgenyneu/keychain-swift" "20.0.0"
+github "onevcat/Kingfisher" "7.1.2"

@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6527DE3BB1A9692E274D1D08 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C334C301D46E28F97828406A /* Pods_PlatziTweets.framework */; };
+		B15C3858279601CC002C241F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C3857279601CC002C241F /* AppDelegate.swift */; };
+		B15C385C279601CC002C241F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C385B279601CC002C241F /* ViewController.swift */; };
+		B15C385F279601CC002C241F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15C385D279601CC002C241F /* Main.storyboard */; };
+		B15C3861279601D1002C241F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15C3860279601D1002C241F /* Assets.xcassets */; };
+		B15C3864279601D1002C241F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15C3862279601D1002C241F /* LaunchScreen.storyboard */; };
+		B15C38722798640B002C241F /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386B2798640B002C241F /* Lottie.framework */; };
+		B15C38732798640B002C241F /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386B2798640B002C241F /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B15C38742798640B002C241F /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386C2798640B002C241F /* KeychainSwift.framework */; };
+		B15C38752798640B002C241F /* KeychainSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386C2798640B002C241F /* KeychainSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B15C38762798640B002C241F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386D2798640B002C241F /* SnapKit.framework */; };
+		B15C38772798640B002C241F /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386D2798640B002C241F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B15C38782798640B002C241F /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386E2798640B002C241F /* SVProgressHUD.framework */; };
+		B15C38792798640B002C241F /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386E2798640B002C241F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B15C387A2798640B002C241F /* NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386F2798640B002C241F /* NotificationBanner.framework */; };
+		B15C387B2798640B002C241F /* NotificationBanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386F2798640B002C241F /* NotificationBanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B15C387C2798640B002C241F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C38702798640B002C241F /* Kingfisher.framework */; };
+		B15C387D2798640B002C241F /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C38702798640B002C241F /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B15C387E2798640B002C241F /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C38712798640B002C241F /* MarqueeLabel.framework */; };
+		B15C387F2798640B002C241F /* MarqueeLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C38712798640B002C241F /* MarqueeLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B15C38802798640B002C241F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B15C38772798640B002C241F /* SnapKit.framework in Embed Frameworks */,
+				B15C38752798640B002C241F /* KeychainSwift.framework in Embed Frameworks */,
+				B15C387F2798640B002C241F /* MarqueeLabel.framework in Embed Frameworks */,
+				B15C38792798640B002C241F /* SVProgressHUD.framework in Embed Frameworks */,
+				B15C387B2798640B002C241F /* NotificationBanner.framework in Embed Frameworks */,
+				B15C387D2798640B002C241F /* Kingfisher.framework in Embed Frameworks */,
+				B15C38732798640B002C241F /* Lottie.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		40C958FB849100A3A4E0203D /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
+		B15C3854279601CC002C241F /* PlatziTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatziTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15C3857279601CC002C241F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B15C385B279601CC002C241F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B15C385E279601CC002C241F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B15C3860279601D1002C241F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B15C3863279601D1002C241F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B15C3865279601D1002C241F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15C386B2798640B002C241F /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		B15C386C2798640B002C241F /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
+		B15C386D2798640B002C241F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		B15C386E2798640B002C241F /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		B15C386F2798640B002C241F /* NotificationBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationBanner.framework; path = Carthage/Build/iOS/NotificationBanner.framework; sourceTree = "<group>"; };
+		B15C38702798640B002C241F /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		B15C38712798640B002C241F /* MarqueeLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabel.framework; path = Carthage/Build/iOS/MarqueeLabel.framework; sourceTree = "<group>"; };
+		C334C301D46E28F97828406A /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56A0B9E48983299821282DE /* Pods-PlatziTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B15C3851279601CC002C241F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15C38742798640B002C241F /* KeychainSwift.framework in Frameworks */,
+				B15C387C2798640B002C241F /* Kingfisher.framework in Frameworks */,
+				B15C387E2798640B002C241F /* MarqueeLabel.framework in Frameworks */,
+				B15C38782798640B002C241F /* SVProgressHUD.framework in Frameworks */,
+				6527DE3BB1A9692E274D1D08 /* Pods_PlatziTweets.framework in Frameworks */,
+				B15C38722798640B002C241F /* Lottie.framework in Frameworks */,
+				B15C38762798640B002C241F /* SnapKit.framework in Frameworks */,
+				B15C387A2798640B002C241F /* NotificationBanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		387D369BFEC61F933F576406 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B15C386C2798640B002C241F /* KeychainSwift.framework */,
+				B15C38702798640B002C241F /* Kingfisher.framework */,
+				B15C386B2798640B002C241F /* Lottie.framework */,
+				B15C38712798640B002C241F /* MarqueeLabel.framework */,
+				B15C386F2798640B002C241F /* NotificationBanner.framework */,
+				B15C386D2798640B002C241F /* SnapKit.framework */,
+				B15C386E2798640B002C241F /* SVProgressHUD.framework */,
+				C334C301D46E28F97828406A /* Pods_PlatziTweets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B15C384B279601CC002C241F = {
+			isa = PBXGroup;
+			children = (
+				B15C3856279601CC002C241F /* PlatziTweets */,
+				B15C3855279601CC002C241F /* Products */,
+				B222B7D8C5B52A59AC62E230 /* Pods */,
+				387D369BFEC61F933F576406 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B15C3855279601CC002C241F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3854279601CC002C241F /* PlatziTweets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B15C3856279601CC002C241F /* PlatziTweets */ = {
+			isa = PBXGroup;
+			children = (
+				B15C3857279601CC002C241F /* AppDelegate.swift */,
+				B15C385B279601CC002C241F /* ViewController.swift */,
+				B15C385D279601CC002C241F /* Main.storyboard */,
+				B15C3860279601D1002C241F /* Assets.xcassets */,
+				B15C3862279601D1002C241F /* LaunchScreen.storyboard */,
+				B15C3865279601D1002C241F /* Info.plist */,
+			);
+			path = PlatziTweets;
+			sourceTree = "<group>";
+		};
+		B222B7D8C5B52A59AC62E230 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40C958FB849100A3A4E0203D /* Pods-PlatziTweets.debug.xcconfig */,
+				F56A0B9E48983299821282DE /* Pods-PlatziTweets.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B15C3853279601CC002C241F /* PlatziTweets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15C3868279601D1002C241F /* Build configuration list for PBXNativeTarget "PlatziTweets" */;
+			buildPhases = (
+				14ADF2655744C8DCDDC71172 /* [CP] Check Pods Manifest.lock */,
+				B15C3850279601CC002C241F /* Sources */,
+				B15C3851279601CC002C241F /* Frameworks */,
+				B15C3852279601CC002C241F /* Resources */,
+				41A055DC86446D90B3D78DC9 /* [CP] Embed Pods Frameworks */,
+				B15C38802798640B002C241F /* Embed Frameworks */,
+				B15C388127986463002C241F /* Copy Carthage frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlatziTweets;
+			productName = PlatziTweets;
+			productReference = B15C3854279601CC002C241F /* PlatziTweets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B15C384C279601CC002C241F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B15C3853279601CC002C241F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = B15C384F279601CC002C241F /* Build configuration list for PBXProject "PlatziTweets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B15C384B279601CC002C241F;
+			productRefGroup = B15C3855279601CC002C241F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B15C3853279601CC002C241F /* PlatziTweets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B15C3852279601CC002C241F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15C3864279601D1002C241F /* LaunchScreen.storyboard in Resources */,
+				B15C3861279601D1002C241F /* Assets.xcassets in Resources */,
+				B15C385F279601CC002C241F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14ADF2655744C8DCDDC71172 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlatziTweets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41A055DC86446D90B3D78DC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B15C388127986463002C241F /* Copy Carthage frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabel.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NotificationBanner.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = "Copy Carthage frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B15C3850279601CC002C241F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15C385C279601CC002C241F /* ViewController.swift in Sources */,
+				B15C3858279601CC002C241F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B15C385D279601CC002C241F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15C385E279601CC002C241F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B15C3862279601D1002C241F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15C3863279601D1002C241F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B15C3866279601D1002C241F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B15C3867279601D1002C241F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B15C3869279601D1002C241F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40C958FB849100A3A4E0203D /* Pods-PlatziTweets.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUXL9Y7H5M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PlatziTweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.dev.yovany.PlatziTweets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		B15C386A279601D1002C241F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56A0B9E48983299821282DE /* Pods-PlatziTweets.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NUXL9Y7H5M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PlatziTweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.dev.yovany.PlatziTweets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B15C384F279601CC002C241F /* Build configuration list for PBXProject "PlatziTweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15C3866279601D1002C241F /* Debug */,
+				B15C3867279601D1002C241F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15C3868279601D1002C241F /* Build configuration list for PBXNativeTarget "PlatziTweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15C3869279601D1002C241F /* Debug */,
+				B15C386A279601D1002C241F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B15C384C279601CC002C241F /* Project object */;
+}
