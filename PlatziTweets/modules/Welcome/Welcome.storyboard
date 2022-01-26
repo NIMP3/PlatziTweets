@@ -51,8 +51,8 @@
                                             <segue destination="iOX-vD-pb6" kind="show" id="JSi-VK-EB7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rx-iH-PzJ">
-                                        <rect key="frame" x="50" y="788" width="328" height="48"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rx-iH-PzJ">
+                                        <rect key="frame" x="49" y="788" width="328" height="48"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="8nf-e1-Su6"/>
@@ -108,7 +108,7 @@
         <!--Registro-->
         <scene sceneID="lCj-tG-bO9">
             <objects>
-                <viewController id="iOX-vD-pb6" sceneMemberID="viewController">
+                <viewController id="iOX-vD-pb6" customClass="RegisterViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZJW-Z8-xga">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,12 +132,12 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wuL-UL-akJ">
                                                 <rect key="frame" x="0.0" y="108" width="332" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repetir contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bzQ-2C-wSE">
                                                 <rect key="frame" x="0.0" y="162" width="332" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -156,29 +156,48 @@
                                                 <integer key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerAction" destination="iOX-vD-pb6" eventType="touchUpInside" id="EzN-2F-kJu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="5l2-Pf-Jw1">
+                                <rect key="frame" x="0.0" y="801" width="428" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Yf2-yB-RhK"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Avf-MH-8o2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="It7-nr-q1F" firstAttribute="centerY" secondItem="ZJW-Z8-xga" secondAttribute="centerY" id="1Xz-c0-vat"/>
                             <constraint firstItem="Avf-MH-8o2" firstAttribute="trailing" secondItem="It7-nr-q1F" secondAttribute="trailing" constant="48" id="6lm-Z9-bD3"/>
+                            <constraint firstItem="5l2-Pf-Jw1" firstAttribute="leading" secondItem="Avf-MH-8o2" secondAttribute="leading" id="GSI-Bp-Qje"/>
+                            <constraint firstAttribute="bottom" secondItem="5l2-Pf-Jw1" secondAttribute="bottom" id="JU5-hK-pzm"/>
                             <constraint firstItem="It7-nr-q1F" firstAttribute="centerX" secondItem="ZJW-Z8-xga" secondAttribute="centerX" id="Wun-rp-kKZ"/>
                             <constraint firstItem="It7-nr-q1F" firstAttribute="leading" secondItem="Avf-MH-8o2" secondAttribute="leading" constant="48" id="Zwt-l0-uig"/>
+                            <constraint firstItem="5l2-Pf-Jw1" firstAttribute="trailing" secondItem="Avf-MH-8o2" secondAttribute="trailing" id="j6T-TP-b8A"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="lqX-r4-q5r"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="bzQ-2C-wSE" id="HeT-LW-0Mz"/>
+                        <outlet property="emailTextField" destination="uBD-mL-BfL" id="gi7-sO-cmx"/>
+                        <outlet property="namesTextField" destination="INg-bL-hof" id="hyH-zD-h3A"/>
+                        <outlet property="passwordTextField" destination="wuL-UL-akJ" id="fKc-gO-ZJS"/>
+                        <segue destination="NAg-yK-pb5" kind="presentation" identifier="showHome" modalPresentationStyle="fullScreen" id="Ucj-zP-8Wm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9m-u5-pXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1918.840579710145" y="736.60714285714278"/>
+            <point key="canvasLocation" x="1917.7570093457944" y="736.06911447084235"/>
         </scene>
         <!--Iniciar Sesión-->
         <scene sceneID="Cg6-ff-Twd">
             <objects>
-                <viewController id="oFI-RT-fnV" sceneMemberID="viewController">
+                <viewController id="oFI-RT-fnV" customClass="LoginViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ugf-DC-YRA">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,6 +235,9 @@
                                                 <integer key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginAction" destination="oFI-RT-fnV" eventType="touchUpInside" id="OwC-51-9hx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -239,10 +261,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Iniciar Sesión" id="U38-P7-Q52"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="tCZ-ar-LgA" id="KAf-76-rkN"/>
+                        <outlet property="passwordTextField" destination="Xl0-1L-Lzv" id="AKv-gQ-8mD"/>
+                        <segue destination="NAg-yK-pb5" kind="presentation" identifier="showHome" modalPresentationStyle="fullScreen" id="KWT-aP-8GB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PyS-AN-FkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1917.7570093457944" y="-33.693304535637154"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="7r7-Rt-Lur">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="NAg-yK-pb5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQu-Wy-ios" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2581" y="275"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vNc-S7-3Pd">
@@ -263,6 +298,9 @@
             <point key="canvasLocation" x="34.782608695652179" y="330.80357142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ucj-zP-8Wm"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bottomImage" width="351.5" height="123"/>
         <image name="loginBg" width="640" height="425"/>

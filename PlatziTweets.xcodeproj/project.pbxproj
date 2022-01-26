@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6527DE3BB1A9692E274D1D08 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C334C301D46E28F97828406A /* Pods_PlatziTweets.framework */; };
+		B10E0DEB27A0AD61001B1F3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E0DEA27A0AD61001B1F3E /* LoginViewController.swift */; };
+		B10E0DED27A0AD6E001B1F3E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E0DEC27A0AD6E001B1F3E /* RegisterViewController.swift */; };
+		B10E0DF027A0B6D7001B1F3E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10E0DEF27A0B6D6001B1F3E /* Home.storyboard */; };
 		B15C3858279601CC002C241F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C3857279601CC002C241F /* AppDelegate.swift */; };
 		B15C385C279601CC002C241F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C385B279601CC002C241F /* ViewController.swift */; };
 		B15C3861279601D1002C241F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15C3860279601D1002C241F /* Assets.xcassets */; };
@@ -58,6 +61,9 @@
 
 /* Begin PBXFileReference section */
 		40C958FB849100A3A4E0203D /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
+		B10E0DEA27A0AD61001B1F3E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B10E0DEC27A0AD6E001B1F3E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B10E0DEF27A0B6D6001B1F3E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B15C3854279601CC002C241F /* PlatziTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatziTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15C3857279601CC002C241F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B15C385B279601CC002C241F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +123,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B10E0DEE27A0B6BE001B1F3E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B10E0DEF27A0B6D6001B1F3E /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		B15C384B279601CC002C241F = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +173,7 @@
 		B15C38832798A430002C241F /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				B10E0DEE27A0B6BE001B1F3E /* Home */,
 				B15C38842798A465002C241F /* Welcome */,
 			);
 			path = modules;
@@ -168,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				B15C38852798A49A002C241F /* Welcome.storyboard */,
+				B10E0DEA27A0AD61001B1F3E /* LoginViewController.swift */,
+				B10E0DEC27A0AD6E001B1F3E /* RegisterViewController.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -266,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B15C38962798A794002C241F /* check.json in Resources */,
+				B10E0DF027A0B6D7001B1F3E /* Home.storyboard in Resources */,
 				B15C38922798A794002C241F /* error.json in Resources */,
 				B15C3864279601D1002C241F /* LaunchScreen.storyboard in Resources */,
 				B15C388B2798A76E002C241F /* Colors.xcassets in Resources */,
@@ -352,6 +370,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10E0DEB27A0AD61001B1F3E /* LoginViewController.swift in Sources */,
+				B10E0DED27A0AD6E001B1F3E /* RegisterViewController.swift in Sources */,
 				B15C385C279601CC002C241F /* ViewController.swift in Sources */,
 				B15C3858279601CC002C241F /* AppDelegate.swift in Sources */,
 			);
