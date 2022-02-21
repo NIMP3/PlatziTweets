@@ -7,6 +7,8 @@
 
 import UIKit
 import NotificationBanner
+import Simple_Networking
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
     //MARK: - Outlets
@@ -38,6 +40,28 @@ class LoginViewController: UIViewController {
             return
         }
         
-        performSegue(withIdentifier: "showHome", sender: nil)
+        // Creamos request
+        let request = LoginRequest(email: email, password: password)
+        
+        // Iniciamos el progressbar
+        SVProgressHUD.show()
+        
+        // Llamamos a la librería para la gestión de peticiones
+        SN.post(endpoint: Endpoints.login, model: request) {(response: SNResultWithEntity<LoginResponse, ErrorResponse>) in
+            
+            // Detenemos el progressbar
+            SVProgressHUD.dismiss()
+            
+            // Analizamos la respuesta del servidor
+            switch response {
+            case .success:
+                self.performSegue(withIdentifier: "showHome", sender: nil)
+            case .error(let error):
+                NotificationBanner(title: "ERROR", subtitle: "¡Lo sentimos! se presento un error: \(error.localizedDescription)", style: .danger).show()
+            case .errorResult(let entity):
+                NotificationBanner(title: "ERROR", subtitle: entity.error, style: .warning).show()
+            }
+        }
+        
     }
 }

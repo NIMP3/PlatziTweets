@@ -2,4 +2,4 @@ github "Daltron/NotificationBanner" "master"
 github "evgenyneu/keychain-swift" ~> 20.0
 github "SVProgressHUD/SVProgressHUD"
 github "onevcat/Kingfisher" ~> 7.0
-github "airbnb/lottie-ios" "master"	
+github "airbnb/lottie-ios" "master"

@@ -3,11 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6527DE3BB1A9692E274D1D08 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C334C301D46E28F97828406A /* Pods_PlatziTweets.framework */; };
+		6A60A6E027C3EE6000F3F92D /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6DF27C3EE6000F3F92D /* EndPoints.swift */; };
+		6A60A6E227C3EEE400F3F92D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6E127C3EEE400F3F92D /* LoginRequest.swift */; };
+		6A60A6E427C3EF2000F3F92D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6E327C3EF2000F3F92D /* LoginResponse.swift */; };
+		6A60A6E627C3EF6200F3F92D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6E527C3EF6200F3F92D /* User.swift */; };
+		6A60A6EB27C3EFE400F3F92D /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6EA27C3EFE400F3F92D /* ErrorResponse.swift */; };
+		6A60A6ED27C3F05F00F3F92D /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6EC27C3F05F00F3F92D /* RegisterRequest.swift */; };
+		6A60A6EF27C3F0AC00F3F92D /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6EE27C3F0AC00F3F92D /* RegisterResponse.swift */; };
+		6A60A6F127C3F19800F3F92D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6F027C3F19800F3F92D /* Post.swift */; };
+		6A60A6F327C3F1F600F3F92D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6F227C3F1F600F3F92D /* Location.swift */; };
+		6A60A6F527C3F26F00F3F92D /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6F427C3F26F00F3F92D /* PostRequest.swift */; };
+		6A60A6F727C3F2E800F3F92D /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6F627C3F2E800F3F92D /* GeneralResponse.swift */; };
+		6A801E6527BB0ED900F6629F /* SVProgressHUD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E5E27BB0ED900F6629F /* SVProgressHUD.xcframework */; };
+		6A801E6627BB0ED900F6629F /* SVProgressHUD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E5E27BB0ED900F6629F /* SVProgressHUD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A801E6727BB0ED900F6629F /* Kingfisher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E5F27BB0ED900F6629F /* Kingfisher.xcframework */; };
+		6A801E6827BB0ED900F6629F /* Kingfisher.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E5F27BB0ED900F6629F /* Kingfisher.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A801E6927BB0ED900F6629F /* Lottie.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6027BB0ED900F6629F /* Lottie.xcframework */; };
+		6A801E6A27BB0ED900F6629F /* Lottie.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6027BB0ED900F6629F /* Lottie.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A801E6B27BB0ED900F6629F /* KeychainSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6127BB0ED900F6629F /* KeychainSwift.xcframework */; };
+		6A801E6C27BB0ED900F6629F /* KeychainSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6127BB0ED900F6629F /* KeychainSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A801E6D27BB0ED900F6629F /* MarqueeLabel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6227BB0ED900F6629F /* MarqueeLabel.xcframework */; };
+		6A801E6E27BB0ED900F6629F /* MarqueeLabel.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6227BB0ED900F6629F /* MarqueeLabel.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A801E6F27BB0ED900F6629F /* NotificationBanner.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6327BB0ED900F6629F /* NotificationBanner.xcframework */; };
+		6A801E7027BB0ED900F6629F /* NotificationBanner.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6327BB0ED900F6629F /* NotificationBanner.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A801E7127BB0ED900F6629F /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6427BB0ED900F6629F /* SnapKit.xcframework */; };
+		6A801E7227BB0ED900F6629F /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6427BB0ED900F6629F /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B10E0DEB27A0AD61001B1F3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E0DEA27A0AD61001B1F3E /* LoginViewController.swift */; };
 		B10E0DED27A0AD6E001B1F3E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E0DEC27A0AD6E001B1F3E /* RegisterViewController.swift */; };
 		B10E0DF027A0B6D7001B1F3E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10E0DEF27A0B6D6001B1F3E /* Home.storyboard */; };
@@ -15,20 +40,6 @@
 		B15C385C279601CC002C241F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C385B279601CC002C241F /* ViewController.swift */; };
 		B15C3861279601D1002C241F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15C3860279601D1002C241F /* Assets.xcassets */; };
 		B15C3864279601D1002C241F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15C3862279601D1002C241F /* LaunchScreen.storyboard */; };
-		B15C38722798640B002C241F /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386B2798640B002C241F /* Lottie.framework */; };
-		B15C38732798640B002C241F /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386B2798640B002C241F /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B15C38742798640B002C241F /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386C2798640B002C241F /* KeychainSwift.framework */; };
-		B15C38752798640B002C241F /* KeychainSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386C2798640B002C241F /* KeychainSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B15C38762798640B002C241F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386D2798640B002C241F /* SnapKit.framework */; };
-		B15C38772798640B002C241F /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386D2798640B002C241F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B15C38782798640B002C241F /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386E2798640B002C241F /* SVProgressHUD.framework */; };
-		B15C38792798640B002C241F /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386E2798640B002C241F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B15C387A2798640B002C241F /* NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386F2798640B002C241F /* NotificationBanner.framework */; };
-		B15C387B2798640B002C241F /* NotificationBanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C386F2798640B002C241F /* NotificationBanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B15C387C2798640B002C241F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C38702798640B002C241F /* Kingfisher.framework */; };
-		B15C387D2798640B002C241F /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C38702798640B002C241F /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B15C387E2798640B002C241F /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C38712798640B002C241F /* MarqueeLabel.framework */; };
-		B15C387F2798640B002C241F /* MarqueeLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B15C38712798640B002C241F /* MarqueeLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B15C38862798A49A002C241F /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15C38852798A49A002C241F /* Welcome.storyboard */; };
 		B15C388B2798A76E002C241F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15C388A2798A76E002C241F /* Colors.xcassets */; };
 		B15C38922798A794002C241F /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = B15C388C2798A793002C241F /* error.json */; };
@@ -40,19 +51,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B15C38802798640B002C241F /* Embed Frameworks */ = {
+		6A801E7327BB0ED900F6629F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B15C38772798640B002C241F /* SnapKit.framework in Embed Frameworks */,
-				B15C38752798640B002C241F /* KeychainSwift.framework in Embed Frameworks */,
-				B15C387F2798640B002C241F /* MarqueeLabel.framework in Embed Frameworks */,
-				B15C38792798640B002C241F /* SVProgressHUD.framework in Embed Frameworks */,
-				B15C387B2798640B002C241F /* NotificationBanner.framework in Embed Frameworks */,
-				B15C387D2798640B002C241F /* Kingfisher.framework in Embed Frameworks */,
-				B15C38732798640B002C241F /* Lottie.framework in Embed Frameworks */,
+				6A801E7027BB0ED900F6629F /* NotificationBanner.xcframework in Embed Frameworks */,
+				6A801E7227BB0ED900F6629F /* SnapKit.xcframework in Embed Frameworks */,
+				6A801E6627BB0ED900F6629F /* SVProgressHUD.xcframework in Embed Frameworks */,
+				6A801E6C27BB0ED900F6629F /* KeychainSwift.xcframework in Embed Frameworks */,
+				6A801E6827BB0ED900F6629F /* Kingfisher.xcframework in Embed Frameworks */,
+				6A801E6E27BB0ED900F6629F /* MarqueeLabel.xcframework in Embed Frameworks */,
+				6A801E6A27BB0ED900F6629F /* Lottie.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +72,24 @@
 
 /* Begin PBXFileReference section */
 		40C958FB849100A3A4E0203D /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
+		6A60A6DF27C3EE6000F3F92D /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		6A60A6E127C3EEE400F3F92D /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		6A60A6E327C3EF2000F3F92D /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		6A60A6E527C3EF6200F3F92D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6A60A6EA27C3EFE400F3F92D /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		6A60A6EC27C3F05F00F3F92D /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		6A60A6EE27C3F0AC00F3F92D /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		6A60A6F027C3F19800F3F92D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		6A60A6F227C3F1F600F3F92D /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		6A60A6F427C3F26F00F3F92D /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		6A60A6F627C3F2E800F3F92D /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		6A801E5E27BB0ED900F6629F /* SVProgressHUD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SVProgressHUD.xcframework; path = Carthage/Build/SVProgressHUD.xcframework; sourceTree = "<group>"; };
+		6A801E5F27BB0ED900F6629F /* Kingfisher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Kingfisher.xcframework; path = Carthage/Build/Kingfisher.xcframework; sourceTree = "<group>"; };
+		6A801E6027BB0ED900F6629F /* Lottie.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Lottie.xcframework; path = Carthage/Build/Lottie.xcframework; sourceTree = "<group>"; };
+		6A801E6127BB0ED900F6629F /* KeychainSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainSwift.xcframework; path = Carthage/Build/KeychainSwift.xcframework; sourceTree = "<group>"; };
+		6A801E6227BB0ED900F6629F /* MarqueeLabel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MarqueeLabel.xcframework; path = Carthage/Build/MarqueeLabel.xcframework; sourceTree = "<group>"; };
+		6A801E6327BB0ED900F6629F /* NotificationBanner.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NotificationBanner.xcframework; path = Carthage/Build/NotificationBanner.xcframework; sourceTree = "<group>"; };
+		6A801E6427BB0ED900F6629F /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = Carthage/Build/SnapKit.xcframework; sourceTree = "<group>"; };
 		B10E0DEA27A0AD61001B1F3E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B10E0DEC27A0AD6E001B1F3E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B10E0DEF27A0B6D6001B1F3E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -94,14 +123,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B15C38742798640B002C241F /* KeychainSwift.framework in Frameworks */,
-				B15C387C2798640B002C241F /* Kingfisher.framework in Frameworks */,
-				B15C387E2798640B002C241F /* MarqueeLabel.framework in Frameworks */,
-				B15C38782798640B002C241F /* SVProgressHUD.framework in Frameworks */,
+				6A801E6727BB0ED900F6629F /* Kingfisher.xcframework in Frameworks */,
 				6527DE3BB1A9692E274D1D08 /* Pods_PlatziTweets.framework in Frameworks */,
-				B15C38722798640B002C241F /* Lottie.framework in Frameworks */,
-				B15C38762798640B002C241F /* SnapKit.framework in Frameworks */,
-				B15C387A2798640B002C241F /* NotificationBanner.framework in Frameworks */,
+				6A801E6B27BB0ED900F6629F /* KeychainSwift.xcframework in Frameworks */,
+				6A801E6927BB0ED900F6629F /* Lottie.xcframework in Frameworks */,
+				6A801E7127BB0ED900F6629F /* SnapKit.xcframework in Frameworks */,
+				6A801E6F27BB0ED900F6629F /* NotificationBanner.xcframework in Frameworks */,
+				6A801E6527BB0ED900F6629F /* SVProgressHUD.xcframework in Frameworks */,
+				6A801E6D27BB0ED900F6629F /* MarqueeLabel.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +140,13 @@
 		387D369BFEC61F933F576406 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A801E6127BB0ED900F6629F /* KeychainSwift.xcframework */,
+				6A801E5F27BB0ED900F6629F /* Kingfisher.xcframework */,
+				6A801E6027BB0ED900F6629F /* Lottie.xcframework */,
+				6A801E6227BB0ED900F6629F /* MarqueeLabel.xcframework */,
+				6A801E6327BB0ED900F6629F /* NotificationBanner.xcframework */,
+				6A801E6427BB0ED900F6629F /* SnapKit.xcframework */,
+				6A801E5E27BB0ED900F6629F /* SVProgressHUD.xcframework */,
 				B15C386C2798640B002C241F /* KeychainSwift.framework */,
 				B15C38702798640B002C241F /* Kingfisher.framework */,
 				B15C386B2798640B002C241F /* Lottie.framework */,
@@ -121,6 +157,39 @@
 				C334C301D46E28F97828406A /* Pods_PlatziTweets.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A60A6E727C3EFAF00F3F92D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6A60A6E927C3EFCC00F3F92D /* Response */,
+				6A60A6E827C3EFC000F3F92D /* Request */,
+				6A60A6F027C3F19800F3F92D /* Post.swift */,
+				6A60A6E527C3EF6200F3F92D /* User.swift */,
+				6A60A6F227C3F1F600F3F92D /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6A60A6E827C3EFC000F3F92D /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				6A60A6E127C3EEE400F3F92D /* LoginRequest.swift */,
+				6A60A6EC27C3F05F00F3F92D /* RegisterRequest.swift */,
+				6A60A6F427C3F26F00F3F92D /* PostRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		6A60A6E927C3EFCC00F3F92D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				6A60A6E327C3EF2000F3F92D /* LoginResponse.swift */,
+				6A60A6EA27C3EFE400F3F92D /* ErrorResponse.swift */,
+				6A60A6EE27C3F0AC00F3F92D /* RegisterResponse.swift */,
+				6A60A6F627C3F2E800F3F92D /* GeneralResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		B10E0DEE27A0B6BE001B1F3E /* Home */ = {
@@ -162,10 +231,12 @@
 		B15C38822798A41B002C241F /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				6A60A6E727C3EFAF00F3F92D /* Models */,
 				B15C38872798A68A002C241F /* Resources */,
 				B15C3857279601CC002C241F /* AppDelegate.swift */,
 				B15C385B279601CC002C241F /* ViewController.swift */,
 				B15C3862279601D1002C241F /* LaunchScreen.storyboard */,
+				6A60A6DF27C3EE6000F3F92D /* EndPoints.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -233,8 +304,7 @@
 				B15C3851279601CC002C241F /* Frameworks */,
 				B15C3852279601CC002C241F /* Resources */,
 				41A055DC86446D90B3D78DC9 /* [CP] Embed Pods Frameworks */,
-				B15C38802798640B002C241F /* Embed Frameworks */,
-				B15C388127986463002C241F /* Copy Carthage frameworks */,
+				6A801E7327BB0ED900F6629F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,31 +408,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B15C388127986463002C241F /* Copy Carthage frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/KeychainSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabel.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/NotificationBanner.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
-			);
-			name = "Copy Carthage frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -371,9 +416,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10E0DEB27A0AD61001B1F3E /* LoginViewController.swift in Sources */,
+				6A60A6F527C3F26F00F3F92D /* PostRequest.swift in Sources */,
+				6A60A6E027C3EE6000F3F92D /* EndPoints.swift in Sources */,
+				6A60A6ED27C3F05F00F3F92D /* RegisterRequest.swift in Sources */,
+				6A60A6F727C3F2E800F3F92D /* GeneralResponse.swift in Sources */,
 				B10E0DED27A0AD6E001B1F3E /* RegisterViewController.swift in Sources */,
+				6A60A6E227C3EEE400F3F92D /* LoginRequest.swift in Sources */,
+				6A60A6E627C3EF6200F3F92D /* User.swift in Sources */,
+				6A60A6F327C3F1F600F3F92D /* Location.swift in Sources */,
+				6A60A6EF27C3F0AC00F3F92D /* RegisterResponse.swift in Sources */,
 				B15C385C279601CC002C241F /* ViewController.swift in Sources */,
+				6A60A6EB27C3EFE400F3F92D /* ErrorResponse.swift in Sources */,
 				B15C3858279601CC002C241F /* AppDelegate.swift in Sources */,
+				6A60A6F127C3F19800F3F92D /* Post.swift in Sources */,
+				6A60A6E427C3EF2000F3F92D /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +570,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NUXL9Y7H5M;
+				DEVELOPMENT_TEAM = 5SUWMVQHWD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -540,7 +596,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NUXL9Y7H5M;
+				DEVELOPMENT_TEAM = 5SUWMVQHWD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
