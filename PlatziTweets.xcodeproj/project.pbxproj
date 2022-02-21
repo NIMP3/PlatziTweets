@@ -33,6 +33,9 @@
 		6A801E7027BB0ED900F6629F /* NotificationBanner.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6327BB0ED900F6629F /* NotificationBanner.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6A801E7127BB0ED900F6629F /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6427BB0ED900F6629F /* SnapKit.xcframework */; };
 		6A801E7227BB0ED900F6629F /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A801E6427BB0ED900F6629F /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6ADB64EF27C4371800910562 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB64EE27C4371800910562 /* HomeViewController.swift */; };
+		6ADB64F327C438BB00910562 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB64F127C438BB00910562 /* TweetTableViewCell.swift */; };
+		6ADB64F427C438BB00910562 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ADB64F227C438BB00910562 /* TweetTableViewCell.xib */; };
 		B10E0DEB27A0AD61001B1F3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E0DEA27A0AD61001B1F3E /* LoginViewController.swift */; };
 		B10E0DED27A0AD6E001B1F3E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E0DEC27A0AD6E001B1F3E /* RegisterViewController.swift */; };
 		B10E0DF027A0B6D7001B1F3E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10E0DEF27A0B6D6001B1F3E /* Home.storyboard */; };
@@ -90,6 +93,9 @@
 		6A801E6227BB0ED900F6629F /* MarqueeLabel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MarqueeLabel.xcframework; path = Carthage/Build/MarqueeLabel.xcframework; sourceTree = "<group>"; };
 		6A801E6327BB0ED900F6629F /* NotificationBanner.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NotificationBanner.xcframework; path = Carthage/Build/NotificationBanner.xcframework; sourceTree = "<group>"; };
 		6A801E6427BB0ED900F6629F /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = Carthage/Build/SnapKit.xcframework; sourceTree = "<group>"; };
+		6ADB64EE27C4371800910562 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6ADB64F127C438BB00910562 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		6ADB64F227C438BB00910562 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		B10E0DEA27A0AD61001B1F3E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B10E0DEC27A0AD6E001B1F3E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B10E0DEF27A0B6D6001B1F3E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -192,10 +198,21 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		6ADB64F027C4387D00910562 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6ADB64F127C438BB00910562 /* TweetTableViewCell.swift */,
+				6ADB64F227C438BB00910562 /* TweetTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B10E0DEE27A0B6BE001B1F3E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6ADB64F027C4387D00910562 /* Cells */,
 				B10E0DEF27A0B6D6001B1F3E /* Home.storyboard */,
+				6ADB64EE27C4371800910562 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -359,6 +376,7 @@
 				B15C388B2798A76E002C241F /* Colors.xcassets in Resources */,
 				B15C38942798A794002C241F /* loader.json in Resources */,
 				B15C3861279601D1002C241F /* Assets.xcassets in Resources */,
+				6ADB64F427C438BB00910562 /* TweetTableViewCell.xib in Resources */,
 				B15C38952798A794002C241F /* question.json in Resources */,
 				B15C38972798A794002C241F /* info.json in Resources */,
 				B15C38932798A794002C241F /* warning.json in Resources */,
@@ -416,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10E0DEB27A0AD61001B1F3E /* LoginViewController.swift in Sources */,
+				6ADB64F327C438BB00910562 /* TweetTableViewCell.swift in Sources */,
 				6A60A6F527C3F26F00F3F92D /* PostRequest.swift in Sources */,
 				6A60A6E027C3EE6000F3F92D /* EndPoints.swift in Sources */,
 				6A60A6ED27C3F05F00F3F92D /* RegisterRequest.swift in Sources */,
@@ -426,6 +445,7 @@
 				6A60A6F327C3F1F600F3F92D /* Location.swift in Sources */,
 				6A60A6EF27C3F0AC00F3F92D /* RegisterResponse.swift in Sources */,
 				B15C385C279601CC002C241F /* ViewController.swift in Sources */,
+				6ADB64EF27C4371800910562 /* HomeViewController.swift in Sources */,
 				6A60A6EB27C3EFE400F3F92D /* ErrorResponse.swift in Sources */,
 				B15C3858279601CC002C241F /* AppDelegate.swift in Sources */,
 				6A60A6F127C3F19800F3F92D /* Post.swift in Sources */,

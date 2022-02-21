@@ -54,7 +54,8 @@ class LoginViewController: UIViewController {
             
             // Analizamos la respuesta del servidor
             switch response {
-            case .success:
+            case .success(let user):
+                SimpleNetworking.setAuthenticationHeader(prefix: "", token: user.token)
                 self.performSegue(withIdentifier: "showHome", sender: nil)
             case .error(let error):
                 NotificationBanner(title: "ERROR", subtitle: "¡Lo sentimos! se presento un error: \(error.localizedDescription)", style: .danger).show()
