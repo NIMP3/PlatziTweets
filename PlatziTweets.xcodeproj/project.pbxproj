@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6527DE3BB1A9692E274D1D08 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C334C301D46E28F97828406A /* Pods_PlatziTweets.framework */; };
+		6A2F37EB27C59A4000209848 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2F37EA27C59A4000209848 /* AddPostViewController.swift */; };
 		6A60A6E027C3EE6000F3F92D /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6DF27C3EE6000F3F92D /* EndPoints.swift */; };
 		6A60A6E227C3EEE400F3F92D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6E127C3EEE400F3F92D /* LoginRequest.swift */; };
 		6A60A6E427C3EF2000F3F92D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6E327C3EF2000F3F92D /* LoginResponse.swift */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		40C958FB849100A3A4E0203D /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
+		6A2F37EA27C59A4000209848 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		6A60A6DF27C3EE6000F3F92D /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		6A60A6E127C3EEE400F3F92D /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		6A60A6E327C3EF2000F3F92D /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				6ADB64F027C4387D00910562 /* Cells */,
 				B10E0DEF27A0B6D6001B1F3E /* Home.storyboard */,
 				6ADB64EE27C4371800910562 /* HomeViewController.swift */,
+				6A2F37EA27C59A4000209848 /* AddPostViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				6A60A6E227C3EEE400F3F92D /* LoginRequest.swift in Sources */,
 				6A60A6E627C3EF6200F3F92D /* User.swift in Sources */,
 				6A60A6F327C3F1F600F3F92D /* Location.swift in Sources */,
+				6A2F37EB27C59A4000209848 /* AddPostViewController.swift in Sources */,
 				6A60A6EF27C3F0AC00F3F92D /* RegisterResponse.swift in Sources */,
 				B15C385C279601CC002C241F /* ViewController.swift in Sources */,
 				6ADB64EF27C4371800910562 /* HomeViewController.swift in Sources */,

@@ -19,10 +19,15 @@ class HomeViewController: UIViewController {
     private let cellId = "TweetTableViewCell"
     private var dataSource: [Post] = []
 
+    //MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         getPosts()
     }
 

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,14 +22,35 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFh-4W-83T">
+                                <rect key="frame" x="350" y="798" width="48" height="48"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Pei-Pc-Xf8"/>
+                                    <constraint firstAttribute="height" constant="48" id="gVM-Zm-Wyi"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="GGQ-Xs-Q7E" kind="presentation" modalPresentationStyle="fullScreen" id="8eD-T6-b7m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="0cL-yS-TDZ" secondAttribute="bottom" id="Bwj-Ub-MfD"/>
                             <constraint firstItem="0cL-yS-TDZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Jv7-JA-ptd"/>
+                            <constraint firstItem="fFh-4W-83T" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-16" id="K74-h2-mUU"/>
                             <constraint firstItem="0cL-yS-TDZ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Mo9-b3-TjS"/>
                             <constraint firstItem="0cL-yS-TDZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Y8A-YW-OCK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fFh-4W-83T" secondAttribute="bottom" constant="16" id="m57-d2-ifG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tweets" id="RZB-mA-rzv"/>
@@ -39,6 +61,96 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="96.428571428571431"/>
+        </scene>
+        <!--Add Post View Controller-->
+        <scene sceneID="wRM-Wt-2DG">
+            <objects>
+                <viewController id="GGQ-Xs-Q7E" customClass="AddPostViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J0h-ZW-GWP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevo Tweet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cW-7n-Vzx">
+                                <rect key="frame" x="20" y="104.5" width="374" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCO-cg-VrH">
+                                <rect key="frame" x="10" y="64" width="95.5" height="35.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Volver" imagePadding="8">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dismissAction" destination="GGQ-Xs-Q7E" eventType="touchUpInside" id="py6-Sl-x3f"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GsR-1U-8yz">
+                                <rect key="frame" x="20" y="157.5" width="374" height="186"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cSm-Yv-bRV">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="fC1-iW-7hv"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktx-LH-kOl">
+                                        <rect key="frame" x="0.0" y="138" width="374" height="48"/>
+                                        <color key="backgroundColor" name="PlatziColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="xGH-MH-egq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Publicar">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="AddPostAction" destination="GGQ-Xs-Q7E" eventType="touchUpInside" id="LAL-ua-aoK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="eNG-rN-Z3y">
+                                <rect key="frame" x="0.0" y="771" width="414" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="FRK-mn-gVT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9iT-rd-AJs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WCO-cg-VrH" firstAttribute="leading" secondItem="9iT-rd-AJs" secondAttribute="leading" constant="10" id="7YY-l5-OEg"/>
+                            <constraint firstAttribute="bottom" secondItem="eNG-rN-Z3y" secondAttribute="bottom" id="GRi-ha-iPc"/>
+                            <constraint firstItem="9iT-rd-AJs" firstAttribute="trailing" secondItem="eNG-rN-Z3y" secondAttribute="trailing" id="NVL-H9-ePS"/>
+                            <constraint firstItem="9cW-7n-Vzx" firstAttribute="leading" secondItem="9iT-rd-AJs" secondAttribute="leading" constant="20" id="SpK-9s-8LG"/>
+                            <constraint firstItem="WCO-cg-VrH" firstAttribute="top" secondItem="9iT-rd-AJs" secondAttribute="top" constant="20" id="V8v-3o-wKh"/>
+                            <constraint firstItem="9iT-rd-AJs" firstAttribute="trailing" secondItem="9cW-7n-Vzx" secondAttribute="trailing" constant="20" id="eQq-n4-qbp"/>
+                            <constraint firstItem="9iT-rd-AJs" firstAttribute="trailing" secondItem="GsR-1U-8yz" secondAttribute="trailing" constant="20" id="k96-Cc-rpd"/>
+                            <constraint firstItem="GsR-1U-8yz" firstAttribute="leading" secondItem="9iT-rd-AJs" secondAttribute="leading" constant="20" id="pb1-3R-Zpm"/>
+                            <constraint firstItem="GsR-1U-8yz" firstAttribute="top" secondItem="9cW-7n-Vzx" secondAttribute="bottom" constant="10" id="uSH-PI-chX"/>
+                            <constraint firstItem="eNG-rN-Z3y" firstAttribute="leading" secondItem="9iT-rd-AJs" secondAttribute="leading" id="uTi-DO-pwQ"/>
+                            <constraint firstItem="9cW-7n-Vzx" firstAttribute="top" secondItem="WCO-cg-VrH" secondAttribute="bottom" constant="5" id="zY1-Gm-JlW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="postTextView" destination="cSm-Yv-bRV" id="FfV-Zd-sUB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmY-l5-F8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="96"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dLH-Cc-jWv">
@@ -60,6 +172,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bottomImage" width="351.5" height="123"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PlatziColor">
+            <color red="0.59607843137254901" green="0.792156862745098" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
