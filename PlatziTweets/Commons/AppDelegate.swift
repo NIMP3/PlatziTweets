@@ -13,8 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        loadUI()
+        
         return true
+    }
+    
+    private func loadUI() {
+        let session = SessionManager()
+        session.loadSessionData()
+        let nameViewController = session.checkSession() ? "Home" : "Welcome"
+        
+        let viewController = UIStoryboard(name: nameViewController, bundle: Bundle.main).instantiateInitialViewController()
+        
+        window?.rootViewController = viewController
+        window?.makeKeyAndVisible()
     }
 }
 

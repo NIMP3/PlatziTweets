@@ -11,5 +11,5 @@ struct Endpoints {
     static let domain = "https://platzi-tweets-backend.herokuapp.com/api/v1"
     static let login = domain + "/auth"
     static let register = domain + "/register"
-    static let posts = domain + "/posts"
+    static let posts = domain + "/posts/"
 }

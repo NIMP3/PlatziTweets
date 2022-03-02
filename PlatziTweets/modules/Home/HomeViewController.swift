@@ -67,6 +67,33 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    
+    private func deletePostAt(indexPath: IndexPath) {
+        // Iniciamos el progressbar
+        SVProgressHUD.show()
+        
+        // Obtenemos el ID del post que vamos a borrar
+        let postId = dataSource[indexPath.row].id
+        
+        // Creamos el endPoint
+        let endPoint = Endpoints.posts + postId
+        
+        //Configuramos y consumimos el servicio
+        SN.delete(endpoint: endPoint) { (response: SNResultWithEntity<GeneralResponse, ErrorResponse>) in
+            // Detenemos el progressbar
+            SVProgressHUD.dismiss()
+            
+            switch response {
+            case .success:
+                self.dataSource.remove(at: indexPath.row)
+                self.tableView.deleteRows(at: [indexPath], with: .fade)
+            case .error(let error):
+                NotificationBanner(title: "ERROR", subtitle: "¡Lo sentimos! Se presento un error: \(error.localizedDescription)", style: .danger).show()
+            case .errorResult(let entity):
+                NotificationBanner(title: "ERROR", subtitle: entity.error, style: .warning).show()
+            }
+        }
+    }
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
@@ -85,5 +112,18 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         cell.setupCellWith(post: dataSource[indexPath.row])
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Borrar") { _, _ in
+            self.deletePostAt(indexPath: indexPath)
+        }
+        
+        return [deleteAction]
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // TODO: Guardar el correo del usuario en el (LOGIN, REGISTER) y validar
+        return dataSource[indexPath.row].author.email == "test@test.com"
     }
 }

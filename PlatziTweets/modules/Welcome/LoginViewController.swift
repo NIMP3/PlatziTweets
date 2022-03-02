@@ -9,6 +9,7 @@ import UIKit
 import NotificationBanner
 import Simple_Networking
 import SVProgressHUD
+import KeychainSwift
 
 class LoginViewController: UIViewController {
     //MARK: - Outlets
@@ -55,8 +56,20 @@ class LoginViewController: UIViewController {
             // Analizamos la respuesta del servidor
             switch response {
             case .success(let user):
-                SimpleNetworking.setAuthenticationHeader(prefix: "", token: user.token)
-                self.performSegue(withIdentifier: "showHome", sender: nil)
+                
+                // Creamos la sesión de usuario
+                let session = SessionManager()
+                let result = session.createSession(email, password, user.token)
+                
+                if result {
+                    session.loadSessionData()
+                    self.performSegue(withIdentifier: "showHome", sender: nil)
+                }
+                else {
+                    NotificationBanner(title: "ERROR", subtitle: "¡Lo sentimos! se presento un error: Error al crear la sesión.", style: .danger).show()
+                }
+                
+                
             case .error(let error):
                 NotificationBanner(title: "ERROR", subtitle: "¡Lo sentimos! se presento un error: \(error.localizedDescription)", style: .danger).show()
             case .errorResult(let entity):
