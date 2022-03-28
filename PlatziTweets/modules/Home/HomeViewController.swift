@@ -123,7 +123,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // TODO: Guardar el correo del usuario en el (LOGIN, REGISTER) y validar
-        return dataSource[indexPath.row].author.email == "test@test.com"
+        guard let email = SessionManager().getEmailSession() else { return false }
+        print("EMAIL: \(email)")
+        return dataSource[indexPath.row].author.email == email
     }
 }

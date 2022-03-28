@@ -54,4 +54,8 @@ class SessionManager {
             SimpleNetworking.setAuthenticationHeader(prefix: "", token: token)
         }
     }
+    
+    func getEmailSession() -> String? {
+        return keychain.get(Keys.emailKey)
+    }
 }
