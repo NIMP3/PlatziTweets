@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6527DE3BB1A9692E274D1D08 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C334C301D46E28F97828406A /* Pods_PlatziTweets.framework */; };
 		6A2F37EB27C59A4000209848 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2F37EA27C59A4000209848 /* AddPostViewController.swift */; };
-		6A3495DC27F3A2E000AE489A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A3495DB27F3A2E000AE489A /* GoogleService-Info.plist */; };
+		6A3495E027F3C1C100AE489A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A3495DF27F3C1C100AE489A /* GoogleService-Info.plist */; };
 		6A45699D27C99676000670CE /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A45699C27C99676000670CE /* SessionManager.swift */; };
 		6A60A6E027C3EE6000F3F92D /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6DF27C3EE6000F3F92D /* EndPoints.swift */; };
 		6A60A6E227C3EEE400F3F92D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60A6E127C3EEE400F3F92D /* LoginRequest.swift */; };
@@ -80,7 +80,7 @@
 /* Begin PBXFileReference section */
 		40C958FB849100A3A4E0203D /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
 		6A2F37EA27C59A4000209848 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
-		6A3495DB27F3A2E000AE489A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6A3495DF27F3C1C100AE489A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6A45699C27C99676000670CE /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		6A60A6DF27C3EE6000F3F92D /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		6A60A6E127C3EEE400F3F92D /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 				B15C38832798A430002C241F /* modules */,
 				B15C38822798A41B002C241F /* Commons */,
 				B15C3865279601D1002C241F /* Info.plist */,
-				6A3495DB27F3A2E000AE489A /* GoogleService-Info.plist */,
+				6A3495DF27F3C1C100AE489A /* GoogleService-Info.plist */,
 			);
 			path = PlatziTweets;
 			sourceTree = "<group>";
@@ -381,7 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A3495DC27F3A2E000AE489A /* GoogleService-Info.plist in Resources */,
+				6A3495E027F3C1C100AE489A /* GoogleService-Info.plist in Resources */,
 				B15C38962798A794002C241F /* check.json in Resources */,
 				B10E0DF027A0B6D7001B1F3E /* Home.storyboard in Resources */,
 				B15C38922798A794002C241F /* error.json in Resources */,
