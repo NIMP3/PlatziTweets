@@ -9,6 +9,7 @@ import UIKit
 import Simple_Networking
 import SVProgressHUD
 import NotificationBanner
+import FirebaseStorage
 
 class AddPostViewController: UIViewController {
     
@@ -21,7 +22,7 @@ class AddPostViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction func AddPostAction() {
-        savePost()
+        uploadPhotoToFirebase()
     }
     
     @IBAction func dismissAction() {
@@ -47,9 +48,9 @@ class AddPostViewController: UIViewController {
     
     private func openCamera() {
         imagePicker = UIImagePickerController()
-        imagePicker?.sourceType = .camera
-        imagePicker?.cameraFlashMode = .off
-        imagePicker?.cameraCaptureMode = .photo
+        imagePicker?.sourceType = .photoLibrary
+        //imagePicker?.cameraFlashMode = .off
+        //imagePicker?.cameraCaptureMode = .photo
         imagePicker?.allowsEditing = true
         imagePicker?.delegate = self
         
@@ -60,18 +61,60 @@ class AddPostViewController: UIViewController {
         present(imagePicker, animated: true, completion: nil)
 
     }
+    
+    private func uploadPhotoToFirebase() {
+        // 1. Aseguramos de que la foto exista
+        // 2. Comprimir la imagen y convertirla en Data
+        
+        guard let imageSaved = previewImageView.image,
+              let imageSavedData: Data = imageSaved.jpegData(compressionQuality: 0.1) else {
+                  return
+              }
+        
+        SVProgressHUD.show()
+        
+        // 3. Configuracción para guardar la foto en Firebase
+        let metaDataConfig = StorageMetadata()
+        metaDataConfig.contentType = "image/jpg"
+        
+        // 4. Referencia al storage de firebase
+        let storage = Storage.storage()
+        
+        // 5. Crear nombre de la imagen a subir
+        let imageName = Int.random(in: 100...1000)
+        
+        // 6. Referencia a la carpeta donde se va a guardar la foto
+        let folderReference = storage.reference(withPath: "fotos-tweets/\(imageName).jpg")
+        
+        // 7. Subir la foto a firebase
+        DispatchQueue.global(qos: .background).async {
+            folderReference.putData(imageSavedData, metadata: metaDataConfig) { metaData, error in
+                DispatchQueue.main.async {
+                    
+                    if let error = error {
+                        SVProgressHUD.dismiss()
+                        NotificationBanner(title: "ERROR", subtitle: "¡Lo sentimos!, se presento un error \(error.localizedDescription)", style: .danger).show()
+                        return
+                    }
+                    
+                    // Obtener la URL de descarga
+                    folderReference.downloadURL { url, error in
+                        let downloadUrl = url?.absoluteString ?? ""
+                        self.savePost(imageUrl: downloadUrl)
+                    }
+                }
+            }
+        }
+    }
 
-    private func savePost() {
+    private func savePost(imageUrl: String?) {
         guard let postText = postTextView.text, !postText.isEmpty else {
             NotificationBanner(title: "Error en Formulario", subtitle: "Por favor ingresa un texto para publicar el tweet", style: .warning).show()
             return
         }
         
         // Creamos el request
-        let request = PostRequest(text: postText, imageUrl: nil, videoUrl: nil, location: nil)
-        
-        // Iniciamos el progressbar
-        SVProgressHUD.show()
+        let request = PostRequest(text: postText, imageUrl: imageUrl, videoUrl: nil, location: nil)
         
         // Configuramos y consumimos el servicio
         SN.post(endpoint: Endpoints.posts, model: request) { (response: SNResultWithEntity<Post, ErrorResponse>) in
